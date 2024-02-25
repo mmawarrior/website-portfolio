@@ -1154,8 +1154,6 @@ a.site-button{
 /*max Width 768px */
 
 @media screen and (max-width: 767px) {
-
-
     
     .home-content h1{
         font-size: 32px;
@@ -1164,7 +1162,7 @@ a.site-button{
     
     .contact-info{
         margin-bottom: 30px;
-        padding: 0 50px;
+        padding: 0 0px;
     }
    
     .social a{
@@ -1236,6 +1234,12 @@ a.site-button{
     .diag .blog{
         padding-bottom: 60px;
     }
+
+    .diag .page-title.sub{
+        font-size: 23px;
+        text-align: left;
+        width: 100%;
+        float: left;
     
 }
 
@@ -1246,12 +1250,10 @@ a.site-button{
  .nav-menu{
         display: block!important;
     }
-    
-}
-
+   
+    }
 
 /*------------------------ 7 Slider & Video Home ------------------------*/
-
 
 .home-slider{
     position: absolute;
@@ -1280,16 +1282,4 @@ a.site-button{
      animation-name: none !important;
         visibility: visible !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
