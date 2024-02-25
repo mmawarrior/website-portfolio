@@ -268,7 +268,7 @@ input:-webkit-autofill {
 }
 
 .diag .home{
-    background: url(../images/home-2.jpg) 50% 50% fixed;
+    background: url(../images/home-2.jpg) center center fixed;
     background-size: cover;
 }
 
@@ -1147,7 +1147,10 @@ a.site-button{
     .about.type-1 .about-image img{
         margin: 0;
     }
-    
+    .diag .home {
+        background: url(../images/home-2.jpg) center center fixed;
+        background-size: cover;
+    }
 }
 
 
@@ -1240,7 +1243,10 @@ a.site-button{
         text-align: left;
         width: 100%;
         float: left;
-    
+}
+.diag .home {
+    background: url(../images/home-2.jpg) center center fixed;
+    background-size: cover;
 }
 
 
