@@ -268,8 +268,8 @@ input:-webkit-autofill {
 }
 
 .diag .home{
-    background: url(../images/home-2.jpg) center center fixed;
- }
+    background-size: cover;
+}
 
 .home-content{
    display: table-cell;
@@ -867,9 +867,6 @@ input:-webkit-autofill {
     -moz-transition: all ease 0.3s;
 }
 
-
-
-
 /*------------------------ 5 Blog ------------------------*/
 
 .blog-image img{
@@ -1026,8 +1023,6 @@ ul.post-comment li p {
     margin-right:120px;
 }
 
-
-
 /*------------------------ 5 Contact ------------------------*/
 
 
@@ -1121,9 +1116,6 @@ a.site-button{
     transition: all ease 0.3s;
 }
 
-
-
-
 /*------------------------ 6 Responsive ------------------------*/
 
 
@@ -1146,11 +1138,8 @@ a.site-button{
     .about.type-1 .about-image img{
         margin: 0;
     }
-    .diag .home {
-        background: url(../images/home-2.jpg) center center fixed;
-     }
+    
 }
-
 
 /*max Width 768px */
 
@@ -1163,7 +1152,7 @@ a.site-button{
     
     .contact-info{
         margin-bottom: 30px;
-        padding: 0 0px;
+        padding: 0 50px;
     }
    
     .social a{
@@ -1235,16 +1224,10 @@ a.site-button{
     .diag .blog{
         padding-bottom: 60px;
     }
-
-    .diag .page-title.sub{
-        font-size: 23px;
-        text-align: left;
-        width: 100%;
-        float: left;
+    .diag .home {
+        background-size: cover; /* Change background size for smaller screens if needed */
+    }
 }
-.diag .home {
-    background: url(../images/home-2.jpg) center center fixed;
- }
 
 
 /*min Width 768px */
@@ -1253,10 +1236,17 @@ a.site-button{
  .nav-menu{
         display: block!important;
     }
-   
+    .diag .page-title.sub{
+        font-size: 23px;
+        text-align: left;
+        width: 100%;
+        float: left;
     }
+    
+}
 
 /*------------------------ 7 Slider & Video Home ------------------------*/
+
 
 .home-slider{
     position: absolute;
@@ -1285,4 +1275,16 @@ a.site-button{
      animation-name: none !important;
         visibility: visible !important;
 }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
