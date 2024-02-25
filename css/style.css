@@ -269,8 +269,7 @@ input:-webkit-autofill {
 
 .diag .home{
     background: url(../images/home-2.jpg) center center fixed;
-    background-size: cover;
-}
+ }
 
 .home-content{
    display: table-cell;
@@ -1149,8 +1148,7 @@ a.site-button{
     }
     .diag .home {
         background: url(../images/home-2.jpg) center center fixed;
-        background-size: cover;
-    }
+     }
 }
 
 
@@ -1246,8 +1244,7 @@ a.site-button{
 }
 .diag .home {
     background: url(../images/home-2.jpg) center center fixed;
-    background-size: cover;
-}
+ }
 
 
 /*min Width 768px */
