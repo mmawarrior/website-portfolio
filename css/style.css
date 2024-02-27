@@ -261,15 +261,17 @@ input:-webkit-autofill {
 
 /*------------------------ 2 Home ------------------------*/		
 
-.home{
-    background:url(../images/home.jpg) bottom center;
+.home {
+    background: url(../images/home.jpg) bottom center;
     width: 100%;
     display: table;
+    background-size: 100% 100%; /* Update this line */
 }
 
-.diag .home{
-    background-size: cover;
+.diag .home {
+    background-size: 100% 100%; /* Update this line */
 }
+
 
 .home-content{
    display: table-cell;
