@@ -28,6 +28,63 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
+<style>
+ .row.blog {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px; /* Adjust according to your design */
+        margin-right: -15px; /* Adjust according to your design */
+    }
+    .blog-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: calc(33.333% - 30px); /* Adjust to fit 3 items per row with padding */
+        margin-left: 15px; /* Adjust according to your design */
+        margin-right: 15px; /* Adjust according to your design */
+        box-sizing: border-box;
+        margin-bottom: 30px; /* Adjust this value to decrease or increase the gap between rows */
+    }
+    .blog-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .tech-tags {
+        display: flex;
+        gap: 5px;
+        margin-top: 10px;
+    }
+    .tech-tag {
+        background-color: #0c85a7; /* Default background color */
+        color: #ffffff; /* Default text color */
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: bold; /* Make text bold */
+    }
+
+    @media (max-width: 1200px) {
+        .blog-content {
+            width: calc(50% - 30px); /* 2 items per row */
+        }
+    }
+
+    @media (max-width: 900px) {
+        .blog-content {
+            width: calc(100% - 30px); /* 1 item per row */
+        }
+    }
+
+    @media (max-width: 600px) {
+        .blog-content {
+            width: calc(100% - 20px); /* Make each item take full width on small screens */
+            margin-left: 10px; /* Adjust according to your design */
+            margin-right: 10px; /* Adjust according to your design */
+        }
+    }
+</style>
+
 </head>
 <body class="diag">
     
@@ -63,6 +120,10 @@
                 </div>
                 <h2 class="blog-title">E-Commerce website dat meubels verkoopt!</h2>
                 <p>Tijdens deze programmeerproject kan de gebruiker meubels kopen.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Javascript</span>
+                    <span class="tech-tag">ReactJS</span>
+                </div>
                 <span class="blog-info"><span>Dat Nguyen</span> - 7 September 2023 </span>
             </a>
             <a href="portfolio2.html" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-content">
@@ -71,6 +132,9 @@
                 </div>
                 <h2 class="blog-title">Japanse schoolwebsite gemaakt!</h2>
                 <p>Een schoolwebsite waarbij de gebruiker bibliotheken, boeken kan opslaan en agenda-afspraken zelf kan opslaan.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Javascript</span>
+                </div>
                 <span class="blog-info"><span>Dat Nguyen</span> - 7 September 2023 </span>
             </a>
             <a href="portfolio3.html" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-content">
@@ -79,15 +143,20 @@
                 </div>
                 <h2 class="blog-title">Een woordenboek applicatie gemaakt!</h2>
                 <p>Op deze website kan de gebruiker in het Engels woorden opzoek door middel van een woordenboek.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Javascript</span>
+                </div>
                 <span class="blog-info"><span>Dat Nguyen</span> - 7 September 2023 </span>
             </a>
              <a href="portfolio4.html" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-content">
                 <div class="blog-image">
                     <img src="images/blog-4.png">
                 </div>
-                <h2 class="blog-title">Een vechtsportwebsite ontwikkeld!
-                </h2>
+                <h2 class="blog-title">Een vechtsportwebsite ontwikkeld!</h2>
                 <p>Een vechtsportwebsite in Axure ontwikkeld tijdens mijn afstudeerfase.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Axure</span>
+                </div>
                 <span class="blog-info"><span>Dat Nguyen</span> - 7 September 2023 </span>
             </a>
             <a href="portfolio5.html" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-content">
@@ -96,6 +165,9 @@
                 </div>
                 <h2 class="blog-title">Website gemaakt in Shopify!</h2>
                 <p>In mijn vrije tijd ben ik bezig geweest met dropshipping.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Shopify</span>
+                </div>
                 <span class="blog-info"><span>Dat Nguyen</span> - 7 September 2023 </span>
             </a>
             <a href="portfolio6.html" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-content">
@@ -104,6 +176,11 @@
                 </div>
                 <h2 class="blog-title">Netflix website gemaakt via ReactJS!</h2>
                 <p>Heb een netflix website gemaakt en deze heeft de informatiebron (API) van IMDB.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">ReactJS</span>
+                    <span class="tech-tag">API</span>
+                    <span class="tech-tag">NodeJS</span>
+                </div>
                 <span class="blog-info"><span>Dat Nguyen</span> - 7 September 2023 </span>
             </a>
             <a href="portfolio7.html" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-content">
@@ -112,6 +189,9 @@
                 </div>
                 <h2 class="blog-title">Kickbokswebsite gemaakt in Wordpress!</h2>
                 <p>Heb voor een Groningse Kickboksschool "Aihato" een nieuwe moderne website gemaakt.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">WordPress</span>
+                </div>
                 <span class="blog-info"><span>Dat Nguyen</span> - 7 September 2023 </span>
             </a>
             <a href="portfolio8.html" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-content">
@@ -120,6 +200,9 @@
                 </div>
                 <h2 class="blog-title">Een voedingsapp gemaakt in Figma</h2>
                 <p>Heb een voedingsapp gemaakt in het vierde leerjaar van mijn studie.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Figma</span>
+                </div>
                 <span class="blog-info"><span>Dat Nguyen</span> - 7 September 2023 </span>
             </a>
             
