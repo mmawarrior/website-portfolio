@@ -7,6 +7,9 @@
 <meta name="keywords" content="personal, portfolio">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Favicon -->
+<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
 <!-- Stylesheets -->
 <link rel="stylesheet" href="css/bootstrap.css"/>
 <link rel="stylesheet" href="css/reset.css"/>
@@ -29,6 +32,61 @@
 <![endif]-->
 
 </head>
+<style>
+
+.row.blog {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Adjust gap between items */
+    }
+    .blog-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1 1 calc(33.333% - 20px); /* Adjust to fit 3 items per row with gap */
+        box-sizing: border-box;
+        margin-bottom: 20px; /* Adjust this value to decrease or increase the gap between rows */
+    }
+    .blog-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .tech-tags {
+        display: flex;
+        gap: 5px;
+        margin-top: 10px;
+    }
+    .tech-tag {
+        background-color:#0c85a7; /* Default background color */
+        color: #ffffff; /* Default text color */
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: bold; /* Make text bold */
+    }
+
+    @media (max-width: 1200px) {
+        .blog-content {
+            flex: 1 1 calc(50% - 20px); /* 2 items per row */
+        }
+    }
+
+    @media (max-width: 900px) {
+        .blog-content {
+            flex: 1 1 100%; /* 1 item per row */
+        }
+        .row.blog {
+            gap: 10px; /* Reduce gap between items */
+        }
+    }
+
+    @media (max-width: 600px) {
+        .blog-content {
+            flex: 1 1 100%; /* Make each item take full width on small screens */
+        }
+    }
+</style>
 <body class="diag">
     
 <!-- LOADER 
@@ -287,6 +345,10 @@
                             </div>
                             <h2 class="blog-title">E-Commerce website dat meubels verkoopt!</h2>
                             <p>Tijdens deze programmeerproject kan de gebruiker meubels kopen.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Javascript</span>     
+                                <span class="tech-tag">ReactJS</span>                     
+                            </div>
                             <span class="blog-info"><span>Dat Nguyen</span> - 7 September 2023 </span>
                         </a>
                         <a href="portfolio2.html" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-content wow fadeInUp" data-wow-delay="0.4s">
@@ -295,6 +357,9 @@
                             </div>
                             <h2 class="blog-title">Japanse schoolwebsite gemaakt!</h2>
                             <p>Een schoolwebsite waarbij de gebruiker bibliotheken, boeken kan opslaan en agenda-afspraken zelf kan opslaan.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Javascript</span>
+                            </div>
                             <span class="blog-info"><span>Dat Nguyen</span> - 7 September 2023 </span>
                         </a>
                         <a href="portfolio3.html" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-content wow fadeInUp" data-wow-delay="0.4s">
@@ -303,6 +368,9 @@
                             </div>
                             <h2 class="blog-title">Een woordenboek applicatie gemaakt!</h2>
                             <p>Op deze website kan de gebruiker in het Engels woorden opzoek door middel van een woordenboek.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Javascript</span>
+                             </div>
                             <span class="blog-info"><span>Dat Nguyen</span> - 7 September 2023 </span>
                         </a>
                         <a href="portfolio-page.html" class="sitebtn pull-right top_45">Laad Meer</a>
@@ -313,8 +381,7 @@
                 </svg>
             </div>
         </section>
-        
-        
+                
         <!-- CONTACT -->
         <section class="contact" id="contact">
             <div class="container">
